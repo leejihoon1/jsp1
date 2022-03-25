@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>day3 index</title>
+<style type="text/css">
+	dd{ padding-bottom: 10px;}
+	a {
+		font-size: 1.2em;
+	}
+	h3,dl {
+		padding-left:20px;
+	}
+</style>
+</head>
+<body>
+	<h3>Day3 Index</h3>
+	<hr>
+	<dl>
+		<dt><a href="post_test.html">1.post_test.html</a></dt>
+		<dd>post_test.html은 사용자가 입력하는 화면의 url<br>
+			request_test.jsp은 사용자가 입력을 전달받아 처리하는 url<br>
+			post 방식으로 요청을 보냅니다.(데이터의 저장을 위한 처리)
+		</dd>
+		<dt><a href="get_test.jsp">2.get_test.jsp</a></dt>
+		<dd>get_test.jsp은 3가지 기능이 있습니다. 1) 사용자의 목록을 출력하는 화면 
+		 		2)고객번호로 조회할 수 있는 요청 링크   3)form을 이용한 조회<br>
+		 		get_result.jsp은 사용자가 입력을 전달받아 처리하는 url<br>
+			get 방식으로 요청을 보냅니다. (데이터의 조회를 위한 처리)<br>
+			* get 과 post 방식의 주요한 또 하나의 차이는 보낼 수 있는 데이터의 크기 제한이 다릅니다.<br>
+			</dd>
+		<dt><a href="get_result.jsp?custno=100001">3.get_result.jsp</a></dt>
+		<dd>get_result.jsp은 사용자 입력을 전달받아 처리하는 url : 조회를 원하는 고객번호를 전달 받아
+			데이터를 수정할 수 있는 화면을 구현.(custno 쿼리스트링으로 전달 안하면 오류)<br>
+			데이터 수정을 처리하는 서버 url(dbs테이블 데이터 수정) :  memner_update.jsp
+			</dd>
+			
+	</dl>
+</body>
+</html> 
+
