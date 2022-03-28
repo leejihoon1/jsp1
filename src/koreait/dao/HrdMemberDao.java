@@ -150,6 +150,35 @@ public class HrdMemberDao {
 			return list;
 		}
 		
+		//조회 컬럼이 다른 조건검색
+		public List<HrdMember> search(String col, String find){
+			List<HrdMember> list = new ArrayList<HrdMember>();
+			String sql = "select * from member_tbl_02"; 
+			switch(col) {
+			case "a":
+				sql +=" where custname like '%' || ? || '%'";
+				break;
+			case "b":	
+				sql +=" where address like '%' || ? || '%'";
+				break;
+			case "c":	
+				sql +=" where grade=?";
+				break;	
+			case "d":	
+				sql +=" where city=?";
+				break;	
+			}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			return list;
+		}
 		
 		
 		//이름을 전달받아 검색
